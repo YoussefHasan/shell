@@ -1,7 +1,7 @@
-# shell: A Simple yet Powerful Command Line Interface
+# uShell: A Simple yet Powerful Command Line Interface
 
 **Welcome**
-,
+
 to uShell, a command line interface designed to provide a user-friendly experience while executing various commands. With its wide range of features, uShell allows you to navigate through your system like never before.
 
 **Basic Commands**
