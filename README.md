@@ -44,9 +44,11 @@ to uShell, a command line interface designed to provide a user-friendly experien
 * Use `$exit` to close the internal session when executing external commands.
 
 **Troubleshooting**
+
 If you encounter any issues or errors, please don't hesitate to contact us. We're always here to help.
 
 **Credits**
+
 The uShell project was created be a simple yet powerful CLI for all users. Special thanks to my mentors at STMicroelectronics
 
 **Getting Started**
