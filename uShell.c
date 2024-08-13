@@ -3,7 +3,7 @@
 
 void print_greeting()
 {
-	char *text = "\nHi bud, this is a \033[1muShell\033[0m.\nHere's a simple guide for commands it can execute:\n\t\033[1;3;4mmypwd\033[0m: prints the current working directory.\n\t\033[1;3;4mmyecho\033[0m: prints a string you type.\n\t\033[1;3;4mmycp\033[0m: copies a file from source path to target path.\n\t\033[1;3;4mmymv\033[0m: moves a file from source path to target path.\n\t\033[1;3;4mmycd\033[0m: changes the current working directory.\n\t\033[1;3;4mmyhelp\033[0m: displays some help.\n\t\033[1;3;4mmyexit\033[0m: closes the uShell session.\n\n";
+	char *text = "\nHi bud, this is a \033[1muShell\033[0m.\nHere's a simple guide for commands it can execute:\n\t\033[1;3;4mmypwd\033[0m: prints the current working directory.\n\t\033[1;3;4mmyecho\033[0m: prints a string you type.\n\t\033[1;3;4mmycp\033[0m: copies a file from source path to target path.\n\t\033[1;3;4mmymv\033[0m: moves a file from source path to target path.\n\t\033[1;3;4mmycd\033[0m: changes the current working directory.\n\t\033[1;3;4mmyhelp\033[0m: displays some help.\n\t\033[1;3;4muptime\033[0m: display the uptime for the system and the time spent in the idle process.\n\t\033[1;3;4mfree\033[0m: displays RAM info and Swap area info.\n\t\033[1;3;4mmyenv\033[0m: prints all the environment variables.\n\t\033[1;3;4mmycd\033[0m: changes the current working directory.\n\t\033[1;3;4mmyredirect\033[0m: input, output and error redirection.\n\t\033[1;3;4mmytype\033[0m: checks if the command is enternal or external.\n\t\033[1;3;4mmyexit\033[0m: closes the uShell session.\n\033[1mthis shell also supports external commands by running an internal process,\nand piping between two processes.\n\033[0m";
 	write(STDOUT, text, strlen(text));
 }
 
@@ -35,7 +35,7 @@ int change_dir(char *new_path)
 
 void display_guide()
 {
-	char *text = "\nHere are some instructions when dealing with some commands that have arguments\n\t\033[1mcp\033[0m: cp [OPTION] SOURCE_PATH DIRECTORY_PATH.\n\t\tfor the option flag you can use \"-a\" which allows you to append the source content to the end of the target file\n\t\033[1mmv\033[0m: mv [OPTION] SOURCE_PATH DIRECTORY_PATH.\n\t\tfor the option flag you can use \"-f\" which allows you to force overwriting the target file if exists\n\n";
+	char *text = "\nHere are some instructions when dealing with some commands that have arguments\n\t\033[1mmyecho\033[0m YOUR_TEXT.\n\t\033[1mmycp\033[0m SOURCE_PATH DIRECTORY_PATH.\n\t\033[1mmymv\033[0m SOURCE_PATH DIRECTORY_PATH.\n\t\033[1mmytype\033[0m COMMAND.\n\t\033[1mmycd\033[0m DIRECTORY_PATH.\n\t\033[1mmyredirect\033[0m: COMMAND_1 (<, >, 2>) COMMAND_2.\nfor external commands execution, enter any external command and it will open an internal session so you can execute ur command. $exit will close this session\n";
 	write(STDOUT, text, strlen(text));
 }
 

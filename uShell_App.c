@@ -132,11 +132,11 @@ int main(int argc, char** argv)
 				{
 					char* temp = (char*)malloc((strlen(temp) + strlen(cmd) + 2) * sizeof(char));
 					strcat(temp, cmd);
-					free(cmd);
 					cmd = temp;
 				}
 				token = strtok(NULL, "");
 				execute_external_command(cmd);
+				free(cmd);
 			}
 			
 		}
