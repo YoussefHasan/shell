@@ -24,6 +24,9 @@ to uShell, a command line interface designed to provide a user-friendly experien
 **Redirecting Input/Output/Error Streams**
 
 * Use `myredirect` with `<`, `>`, or `2>` operators to redirect input/output/error streams.
+* `<` for input redirection.
+* `>` for output redirection.
+* `2>` for eror redirection.
 
 **Using uShell**
 
