@@ -51,7 +51,7 @@ The uShell project was created be a simple yet powerful CLI for all users. Speci
 
 **Getting Started**
 
-1. build the files attached by this command: `gcc uShell.c uShell_App.c -o uShell.exe`, then run the .exe.
+1. build the files attached by this command: `gcc -static uShell.c uShell_App.c -o uShell.exe`, then run the .exe.
 2. Explore the various commands and features offered by uShell.
 3. Don't hesitate to contact us if you have any questions or need assistance.
 
